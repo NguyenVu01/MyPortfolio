@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="IT strategy roadmap 2025 to 2030 with vision to 2035">
+  <defs>
+    <linearGradient id="g5bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f22"/><stop offset="1" stop-color="#06080f"/>
+    </linearGradient>
+    <radialGradient id="g5halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#6366f1" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g5panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".02"/>
+    </linearGradient>
+    <linearGradient id="g5acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9ff"/><stop offset=".55" stop-color="#818cf8"/><stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#g5bg)"/>
+  <g stroke="#161f3f" stroke-width="1" opacity=".8">
+    <path d="M0 90h800M0 180h800M0 270h800M0 360h800"/>
+    <path d="M100 0v450M200 0v450M300 0v450M400 0v450M500 0v450M600 0v450M700 0v450"/>
+  </g>
+  <ellipse cx="400" cy="225" rx="330" ry="200" fill="url(#g5halo)"/>
+
+  <text x="56" y="62" font-family="system-ui,sans-serif" font-size="13" fill="#7f92c4" letter-spacing="2">IT STRATEGY 2025 to 2035</text>
+
+  <!-- horizon cards -->
+  <g font-family="system-ui,sans-serif">
+    <rect x="56" y="88" width="212" height="150" rx="16" fill="url(#g5panel)" stroke="#243358"/>
+    <text x="80" y="122" font-size="12" fill="#7dd3fc" letter-spacing="1.5">HORIZON 1 / 2025–27</text>
+    <text x="80" y="150" font-size="15" font-weight="600" fill="#e6edff">Foundation</text>
+    <g font-size="11.5" fill="#8ea3d6">
+      <text x="80" y="176">- infrastructure uplift</text>
+      <text x="80" y="196">- data governance</text>
+      <text x="80" y="216">- core modernisation</text>
+    </g>
+
+    <rect x="294" y="88" width="212" height="150" rx="16" fill="url(#g5panel)" stroke="#3b3d78"/>
+    <text x="318" y="122" font-size="12" fill="#a5b4fc" letter-spacing="1.5">HORIZON 2 / 2028–30</text>
+    <text x="318" y="150" font-size="15" font-weight="600" fill="#e6edff">Scale</text>
+    <g font-size="11.5" fill="#8ea3d6">
+      <text x="318" y="176">- digital services</text>
+      <text x="318" y="196">- platform architecture</text>
+      <text x="318" y="216">- analytics at scale</text>
+    </g>
+
+    <rect x="532" y="88" width="212" height="150" rx="16" fill="url(#g5panel)" stroke="#4b3f8f"/>
+    <text x="556" y="122" font-size="12" fill="#d8b4fe" letter-spacing="1.5">VISION / 2035</text>
+    <text x="556" y="150" font-size="15" font-weight="600" fill="#e6edff">Intelligence</text>
+    <g font-size="11.5" fill="#8ea3d6">
+      <text x="556" y="176">- AI-enabled operations</text>
+      <text x="556" y="196">- open ecosystem</text>
+      <text x="556" y="216">- data as a product</text>
+    </g>
+  </g>
+
+  <!-- roadmap rail -->
+  <g>
+    <path d="M80 288h640" stroke="#1e2a4d" stroke-width="6" stroke-linecap="round"/>
+    <path d="M80 288h470" stroke="url(#g5acc)" stroke-width="6" stroke-linecap="round"/>
+    <g>
+      <circle cx="80" cy="288" r="10" fill="#4cc9ff" stroke="#06080f" stroke-width="3"/>
+      <circle cx="290" cy="288" r="10" fill="#818cf8" stroke="#06080f" stroke-width="3"/>
+      <circle cx="550" cy="288" r="10" fill="#a855f7" stroke="#06080f" stroke-width="3"/>
+      <circle cx="720" cy="288" r="10" fill="#1e2a4d" stroke="#3b3d78" stroke-width="3"/>
+    </g>
+    <g font-family="system-ui,sans-serif" font-size="11" fill="#7f92c4" text-anchor="middle">
+      <text x="80" y="316">2025</text><text x="290" y="316">2027</text>
+      <text x="550" y="316">2030</text><text x="720" y="316">2035</text>
+    </g>
+  </g>
+
+  <!-- assessment tiles -->
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#8ea3d6">
+    <rect x="56" y="342" width="160" height="56" rx="12" fill="url(#g5panel)" stroke="#243358"/>
+    <text x="76" y="366" fill="#cfe0ff" font-weight="600" font-size="12.5">Infrastructure</text>
+    <text x="76" y="384">current-state review</text>
+
+    <rect x="232" y="342" width="160" height="56" rx="12" fill="url(#g5panel)" stroke="#243358"/>
+    <text x="252" y="366" fill="#cfe0ff" font-weight="600" font-size="12.5">Policy &amp; process</text>
+    <text x="252" y="384">gap assessment</text>
+
+    <rect x="408" y="342" width="160" height="56" rx="12" fill="url(#g5panel)" stroke="#243358"/>
+    <text x="428" y="366" fill="#cfe0ff" font-weight="600" font-size="12.5">Organisation</text>
+    <text x="428" y="384">capability model</text>
+
+    <rect x="584" y="342" width="160" height="56" rx="12" fill="url(#g5panel)" stroke="#243358"/>
+    <text x="604" y="366" fill="#cfe0ff" font-weight="600" font-size="12.5">Data platform</text>
+    <text x="604" y="384">target architecture</text>
+  </g>
+</svg>

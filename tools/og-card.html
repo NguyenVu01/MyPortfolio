@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+  Source for Assets/og-image.jpg, the 1200x630 preview card social platforms show.
+  Regenerate after changing your name, title or portrait:
+
+    python3 -m http.server 4321 --directory .
+    google-chrome --headless=new --window-size=1200,630 --virtual-time-budget=8000 \
+      --screenshot=og.png http://localhost:4321/tools/og-card.html
+    python3 -c "from PIL import Image; Image.open('og.png').convert('RGB').save('Assets/og-image.jpg','JPEG',quality=88,optimize=True)"
+
+  The portrait is cropped in CSS (.photo background-position/size) so no separate
+  cropped file is needed. Retune those two values if you swap avatar.png.
+-->
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{background:#05060d;font-family:Inter,system-ui,sans-serif;color:#e9edfb;position:relative}
+.bg{position:absolute;inset:0;background:url("../Assets/background.webp") center/cover;opacity:.75}
+.scrim{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(5,6,13,.94) 0%,rgba(5,6,13,.78) 44%,rgba(5,6,13,.12) 76%),
+  linear-gradient(180deg,rgba(5,6,13,.35),rgba(5,6,13,.7))}
+
+.copy{position:absolute;left:72px;top:50%;transform:translateY(-50%);width:660px;z-index:3}
+.badge{display:inline-flex;align-items:center;gap:11px;padding:9px 20px 9px 16px;
+  border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:#a7f3d0;background:rgba(52,211,153,.1);
+  border:1px solid rgba(52,211,153,.32);margin-bottom:28px}
+.badge i{width:9px;height:9px;border-radius:50%;background:#34d399;
+  box-shadow:0 0 12px 3px rgba(52,211,153,.9)}
+h1{font-family:"Space Grotesk",sans-serif;font-size:58px;font-weight:700;
+  line-height:1.05;letter-spacing:-.03em;margin-bottom:16px}
+.role{font-size:25px;font-weight:600;margin-bottom:8px;
+  background:linear-gradient(100deg,#4cc9ff,#a855f7);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.loc{font-size:17px;color:#8f9cc0;margin-bottom:30px}
+.meta{display:flex;gap:11px;flex-wrap:wrap}
+.pill{padding:9px 18px;border-radius:999px;font-size:16px;font-weight:500;
+  color:#a9bdf0;background:rgba(76,201,255,.09);border:1px solid rgba(76,201,255,.26)}
+
+.ring{position:absolute;width:420px;height:420px;right:30px;top:62px;border-radius:50%;
+  border:1px solid rgba(150,190,255,.3);z-index:1;
+  background:radial-gradient(circle at 68% 58%,rgba(180,110,255,.45),transparent 62%)}
+.photo{position:absolute;right:40px;bottom:0;width:465px;height:592px;z-index:2;
+  background-image:url("../Assets/avatar.png");
+  background-size:915px 610px;background-position:-250px -18px;background-repeat:no-repeat;
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,.75));
+  -webkit-mask-image:linear-gradient(180deg,#000 80%,transparent 99%);
+  mask-image:linear-gradient(180deg,#000 80%,transparent 99%)}
+</style></head>
+<body>
+<div class="bg"></div><div class="scrim"></div>
+<span class="ring"></span><div class="photo"></div>
+<div class="copy">
+  <p class="badge"><i></i> Available for opportunities</p>
+  <h1>Trung Nguyên</h1>
+  <p class="role">Data Governance &amp; Technology Consultant</p>
+  <p class="loc">Hanoi, Vietnam</p>
+  <div class="meta">
+    <span class="pill">Data Governance</span>
+    <span class="pill">Business Analysis</span>
+    <span class="pill">Banking &amp; Financial Services</span>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Core insurance platform implementation, testing and configuration">
+  <defs>
+    <linearGradient id="g4bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1220"/><stop offset="1" stop-color="#06080f"/>
+    </linearGradient>
+    <radialGradient id="g4halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#34d399" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g4panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".02"/>
+    </linearGradient>
+    <linearGradient id="g4acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/><stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#g4bg)"/>
+  <g stroke="#152a3a" stroke-width="1" opacity=".8">
+    <path d="M0 90h800M0 180h800M0 270h800M0 360h800"/>
+    <path d="M100 0v450M200 0v450M300 0v450M400 0v450M500 0v450M600 0v450M700 0v450"/>
+  </g>
+  <ellipse cx="400" cy="210" rx="330" ry="200" fill="url(#g4halo)"/>
+
+  <text x="56" y="62" font-family="system-ui,sans-serif" font-size="13" fill="#7fa8c4" letter-spacing="2">SIT / UAT CYCLE</text>
+
+  <!-- test pipeline -->
+  <g font-family="system-ui,sans-serif" font-size="12.5">
+    <rect x="56" y="86" width="152" height="66" rx="14" fill="url(#g4panel)" stroke="#2f6b57"/>
+    <circle cx="82" cy="112" r="9" fill="#34d399" fill-opacity=".2" stroke="#34d399"/>
+    <text x="100" y="117" fill="#dbeafe" font-weight="600">Configure</text>
+    <text x="76" y="138" fill="#7f92c4" font-size="11">products, rules</text>
+
+    <rect x="240" y="86" width="152" height="66" rx="14" fill="url(#g4panel)" stroke="#2f6b57"/>
+    <circle cx="266" cy="112" r="9" fill="#38bdf8" fill-opacity=".2" stroke="#38bdf8"/>
+    <text x="284" y="117" fill="#dbeafe" font-weight="600">Execute</text>
+    <text x="260" y="138" fill="#7f92c4" font-size="11">scenario tests</text>
+
+    <rect x="424" y="86" width="152" height="66" rx="14" fill="url(#g4panel)" stroke="#8a6d2f"/>
+    <circle cx="450" cy="112" r="9" fill="#fbbf24" fill-opacity=".2" stroke="#fbbf24"/>
+    <text x="468" y="117" fill="#dbeafe" font-weight="600">Triage</text>
+    <text x="444" y="138" fill="#7f92c4" font-size="11">Jira defects</text>
+
+    <rect x="608" y="86" width="136" height="66" rx="14" fill="url(#g4panel)" stroke="#2f6b57"/>
+    <circle cx="634" cy="112" r="9" fill="#34d399" fill-opacity=".2" stroke="#34d399"/>
+    <text x="652" y="117" fill="#dbeafe" font-weight="600">Sign-off</text>
+    <text x="628" y="138" fill="#7f92c4" font-size="11">UAT accepted</text>
+  </g>
+  <g stroke="url(#g4acc)" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M208 119h26m-7-6 7 6-7 6"/>
+    <path d="M392 119h26m-7-6 7 6-7 6"/>
+    <path d="M576 119h26m-7-6 7 6-7 6"/>
+  </g>
+  <path d="M500 152v26H316v-26" fill="none" stroke="#fbbf24" stroke-width="1.8" opacity=".7" stroke-dasharray="5 5"/>
+
+  <!-- test case table -->
+  <g>
+    <rect x="56" y="200" width="400" height="196" rx="16" fill="url(#g4panel)" stroke="#2c4a63"/>
+    <text x="80" y="232" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#dbeafe">Test cases</text>
+    <g font-family="monospace" font-size="11.5" fill="#9fd6ff">
+      <rect x="80" y="248" width="352" height="30" rx="7" fill="#0d1b24"/>
+      <text x="96" y="268">TC-014, policy issuance</text><text x="416" y="268" text-anchor="end" fill="#6ee7b7">PASS</text>
+      <rect x="80" y="284" width="352" height="30" rx="7" fill="#0d1b24"/>
+      <text x="96" y="304">TC-027, premium calc</text><text x="416" y="304" text-anchor="end" fill="#6ee7b7">PASS</text>
+      <rect x="80" y="320" width="352" height="30" rx="7" fill="#241c0d"/>
+      <text x="96" y="340">TC-041, endorsement</text><text x="416" y="340" text-anchor="end" fill="#fde68a">RETEST</text>
+      <rect x="80" y="356" width="352" height="30" rx="7" fill="#0d1b24"/>
+      <text x="96" y="376">TC-052, bancassurance</text><text x="416" y="376" text-anchor="end" fill="#6ee7b7">PASS</text>
+    </g>
+  </g>
+
+  <!-- automation panel -->
+  <g>
+    <rect x="480" y="200" width="264" height="196" rx="16" fill="url(#g4panel)" stroke="#2c4a63"/>
+    <text x="504" y="232" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#dbeafe">Automation</text>
+    <g font-family="monospace" font-size="12" fill="#7dd3fc">
+      <rect x="504" y="248" width="216" height="118" rx="10" fill="#08131b" stroke="#1e3a4d"/>
+      <text x="520" y="274">$ newman run <tspan fill="#a7f3d0">tcli.json</tspan></text>
+      <text x="520" y="298" fill="#64748b">→ 128 assertions</text>
+      <text x="520" y="322" fill="#6ee7b7">→ 126 passed</text>
+      <text x="520" y="346" fill="#fde68a">→ 2 failed</text>
+    </g>
+    <text x="504" y="386" font-family="system-ui,sans-serif" font-size="11" fill="#7f92c4">Postman, CLI scripts</text>
+  </g>
+</svg>

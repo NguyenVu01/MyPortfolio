@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Data governance and data security policy framework">
+  <defs>
+    <linearGradient id="g1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1128"/><stop offset="1" stop-color="#06080f"/>
+    </linearGradient>
+    <radialGradient id="g1halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g1panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".02"/>
+    </linearGradient>
+    <linearGradient id="g1acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9ff"/><stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#g1bg)"/>
+  <g stroke="#1b2444" stroke-width="1" opacity=".7">
+    <path d="M0 90h800M0 180h800M0 270h800M0 360h800"/>
+    <path d="M100 0v450M200 0v450M300 0v450M400 0v450M500 0v450M600 0v450M700 0v450"/>
+  </g>
+  <ellipse cx="250" cy="225" rx="300" ry="200" fill="url(#g1halo)"/>
+
+  <!-- shield / policy core -->
+  <g>
+    <path d="M150 70l86 30v96c0 62-42 104-86 122-44-18-86-60-86-122v-96z" fill="url(#g1panel)" stroke="url(#g1acc)" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M150 96l60 21v72c0 45-30 76-60 90-30-14-60-45-60-90v-72z" fill="none" stroke="#7dd3fc" stroke-width="1" opacity=".35"/>
+    <path d="M120 190l22 24 42-52" fill="none" stroke="#4cc9ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="150" y="268" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#9fd6ff" letter-spacing="1.5">POLICY</text>
+  </g>
+  <text x="150" y="352" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#7f92c4">DAMA-DMBOK / NIST CSF</text>
+
+  <!-- framework pillars -->
+  <g font-family="system-ui,sans-serif" font-size="12.5" fill="#cfe0ff">
+    <rect x="290" y="72" width="216" height="44" rx="11" fill="url(#g1panel)" stroke="#3a4a7d"/>
+    <circle cx="314" cy="94" r="6" fill="#4cc9ff"/><text x="332" y="99">Data Classification</text>
+
+    <rect x="290" y="128" width="216" height="44" rx="11" fill="url(#g1panel)" stroke="#3a4a7d"/>
+    <circle cx="314" cy="150" r="6" fill="#818cf8"/><text x="332" y="155">Data Quality</text>
+
+    <rect x="290" y="184" width="216" height="44" rx="11" fill="url(#g1panel)" stroke="#3a4a7d"/>
+    <circle cx="314" cy="206" r="6" fill="#a855f7"/><text x="332" y="211">Data Lineage</text>
+
+    <rect x="290" y="240" width="216" height="44" rx="11" fill="url(#g1panel)" stroke="#3a4a7d"/>
+    <circle cx="314" cy="262" r="6" fill="#c084fc"/><text x="332" y="267">Security Controls</text>
+
+    <rect x="290" y="296" width="216" height="44" rx="11" fill="url(#g1panel)" stroke="#3a4a7d"/>
+    <circle cx="314" cy="318" r="6" fill="#34d399"/><text x="332" y="323">Cross-border Transfer</text>
+  </g>
+  <g stroke="url(#g1acc)" stroke-width="1.6" opacity=".55" fill="none">
+    <path d="M236 200h40M276 200v-106h14M276 200v-50h14M276 200h14M276 200v56h14M276 200v112h14"/>
+  </g>
+
+  <!-- maturity gauge -->
+  <g>
+    <rect x="546" y="72" width="200" height="268" rx="16" fill="url(#g1panel)" stroke="#3a4a7d"/>
+    <text x="570" y="102" font-family="system-ui,sans-serif" font-size="12" fill="#8fb4ff" letter-spacing="1">MATURITY</text>
+    <g font-family="system-ui,sans-serif" font-size="11" fill="#7f92c4">
+      <text x="570" y="134">Governance</text>
+      <rect x="570" y="142" width="152" height="8" rx="4" fill="#1e2a4d"/>
+      <rect x="570" y="142" width="118" height="8" rx="4" fill="url(#g1acc)"/>
+      <text x="570" y="176">Data Quality</text>
+      <rect x="570" y="184" width="152" height="8" rx="4" fill="#1e2a4d"/>
+      <rect x="570" y="184" width="94" height="8" rx="4" fill="url(#g1acc)"/>
+      <text x="570" y="218">Security</text>
+      <rect x="570" y="226" width="152" height="8" rx="4" fill="#1e2a4d"/>
+      <rect x="570" y="226" width="134" height="8" rx="4" fill="url(#g1acc)"/>
+      <text x="570" y="260">Data Sharing</text>
+      <rect x="570" y="268" width="152" height="8" rx="4" fill="#1e2a4d"/>
+      <rect x="570" y="268" width="76" height="8" rx="4" fill="url(#g1acc)"/>
+    </g>
+    <text x="570" y="312" font-family="system-ui,sans-serif" font-size="21" font-weight="700" fill="#e6edff">30+</text>
+    <text x="616" y="312" font-family="system-ui,sans-serif" font-size="11" fill="#7f92c4">organisations<tspan x="616" dy="14">assessed</tspan></text>
+  </g>
+</svg>

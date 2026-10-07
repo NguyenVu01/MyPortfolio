@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Azure AI Fundamentals badge">
+  <defs>
+    <linearGradient id="ai-r" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="ai-f" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a855f7" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#4338ca" stop-opacity=".06"/>
+    </linearGradient>
+    <radialGradient id="ai-g" cx=".5" cy=".38" r=".55">
+      <stop offset="0" stop-color="#a855f7" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#ai-g)"/>
+  <path d="M100 14l70 40v92l-70 40-70-40V54z" fill="url(#ai-f)" stroke="url(#ai-r)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M100 30l56 32v76l-56 32-56-32V62z" fill="none" stroke="#d8b4fe" stroke-width="1" opacity=".35"/>
+  <g stroke="url(#ai-r)" stroke-width="2.4" fill="none">
+    <path d="M100 60v18M100 122v18M70 78l14 10M116 112l14 10M130 78l-14 10M84 112l-14 10"/>
+  </g>
+  <g fill="url(#ai-r)">
+    <circle cx="100" cy="100" r="14"/>
+    <circle cx="100" cy="56" r="6"/><circle cx="100" cy="144" r="6"/>
+    <circle cx="66" cy="76" r="6"/><circle cx="134" cy="76" r="6"/>
+    <circle cx="66" cy="124" r="6"/><circle cx="134" cy="124" r="6"/>
+  </g>
+  <text x="100" y="176" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" letter-spacing="3" fill="#e9d5ff">AI-900</text>
+</svg>

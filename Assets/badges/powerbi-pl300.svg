@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Microsoft Power BI Data Analyst PL-300 badge">
+  <defs>
+    <linearGradient id="pb-r" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="pb-f" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#b45309" stop-opacity=".05"/>
+    </linearGradient>
+    <radialGradient id="pb-g" cx=".5" cy=".38" r=".55">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#pb-g)"/>
+  <path d="M100 14l70 40v92l-70 40-70-40V54z" fill="url(#pb-f)" stroke="url(#pb-r)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M100 30l56 32v76l-56 32-56-32V62z" fill="none" stroke="#fcd34d" stroke-width="1" opacity=".3"/>
+  <g fill="url(#pb-r)">
+    <rect x="64" y="98" width="20" height="34" rx="5" opacity=".6"/>
+    <rect x="90" y="80" width="20" height="52" rx="5" opacity=".8"/>
+    <rect x="116" y="62" width="20" height="70" rx="5"/>
+  </g>
+  <text x="100" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" letter-spacing="2.5" fill="#fde68a">PL-300</text>
+</svg>

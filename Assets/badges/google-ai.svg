@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Google AI specialization badge">
+  <defs>
+    <linearGradient id="ga-r" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ea4335"/><stop offset=".5" stop-color="#fbbc04"/><stop offset="1" stop-color="#4285f4"/>
+    </linearGradient>
+    <linearGradient id="ga-f" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ea4335" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#4285f4" stop-opacity=".06"/>
+    </linearGradient>
+    <radialGradient id="ga-g" cx=".5" cy=".38" r=".55">
+      <stop offset="0" stop-color="#fbbc04" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#fbbc04" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#ga-g)"/>
+  <path d="M100 14l70 40v92l-70 40-70-40V54z" fill="url(#ga-f)" stroke="url(#ga-r)" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M100 30l56 32v76l-56 32-56-32V62z" fill="none" stroke="#fdd663" stroke-width="1" opacity=".3"/>
+  <path d="M100 56l9.5 25.5L135 91l-25.5 9.5L100 126l-9.5-25.5L65 91l25.5-9.5z" fill="url(#ga-r)"/>
+  <path d="M135 116l4.5 11L151 131l-11.5 4.5L135 147l-4.5-11.5L119 131l11.5-4z" fill="#8ab4f8" opacity=".85"/>
+  <text x="100" y="176" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" letter-spacing="3" fill="#ffe08a">AI</text>
+</svg>

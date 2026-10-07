@@ -1,0 +1,24 @@
+# Netlify / Cloudflare Pages header rules. Ignored by GitHub Pages, which has no
+# header configuration — everything still works there, just with default caching.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+
+# Content is fingerprint-free, so HTML must always revalidate or edits go unseen.
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Images and fonts are stable — cache them hard.
+/Assets/*
+  Cache-Control: public, max-age=2592000
+
+# CSS/JS change with each edit; a day is a reasonable compromise without hashing.
+/css/*
+  Cache-Control: public, max-age=86400
+/js/*
+  Cache-Control: public, max-age=86400
